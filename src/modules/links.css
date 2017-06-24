@@ -1,0 +1,25 @@
+.links {
+	list-style: none;
+	padding: 0;
+	margin: 3vh 0 0;
+}
+
+.links li a {
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+	background-size: 30px 30px;
+	display: inline-block;
+	padding: 5px 0 5px 40px;
+}
+
+.linkedin a {
+	background-image: url(../icons/linkedin.svg);
+}
+
+.github a {
+	background-image: url(../icons/github.svg);
+}
+
+.twitter a {
+	background-image: url(../icons/twitter.svg);
+}

@@ -1,0 +1,38 @@
+body {
+	background: #3c7419;
+	color: #fff;
+	font-family: 'Share Tech Mono', monospace;
+	height: 100%;
+	line-height: 1.5;
+	margin: 0;
+}
+
+a:link {
+	color: #fff;
+}
+
+a:visited {
+	color: #ccc;
+}
+
+@media (max-width: 60em) {
+	body {
+		font-size: 20px;
+		display: flex;
+		flex-direction: column-reverse;
+	}
+}
+
+@media (min-width: 60em) {
+	html {
+		height: 100%;
+	}
+
+	body {
+		align-items: center;
+		display: flex;
+		flex-direction: row;
+		font-size: 24px;
+		margin: 0;
+	}
+}

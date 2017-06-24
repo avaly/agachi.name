@@ -1,0 +1,38 @@
+include ~html-webpack-template-pug/mixins.pug
+
+doctype html
+html(lang='en')
+	head
+		meta(charset='utf-8')
+		title Valentin Agachi: Full-Stack Engineer / javascript node.js web applications html5 css
+
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width,initial-scale=1')
+
+		meta(name='description', content='Homepage of Valentin Agachi, Full-Stack Engineer. Advanced knowledge in JavaScript, node.js, HTML, CSS.')
+
+		+favicon
+		+inject(/\.css$/)
+
+		link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Share+Tech+Mono')
+
+	body
+		main
+			h1 Hi, I'm Valentin Agachi
+			h2 Full Stack Engineer
+
+			article
+				include modules/experience.pug
+
+				include modules/info.pug
+
+			aside
+				include modules/links.pug
+
+		.photo
+
+		if !JSON.parse(webpackConfig.plugins[0].definitions.PRODUCTION)
+			+inject(/\.js$/)
+
+		script.
+			var _gaq=[['_setAccount','UA-90552-2'],['_trackPageview']];(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src='//www.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'))

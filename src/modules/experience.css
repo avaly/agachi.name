@@ -1,0 +1,44 @@
+.experience {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	padding: 0;
+}
+.experience li {
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+	background-size: 66px 66px;
+	border-radius: 5px;
+	margin-bottom: 1vh;
+	margin-right: 1vw;
+	height: 66px;
+	width: 66px;
+}
+
+.experience a {
+	display: inline-block;
+	text-indent: -99em;
+	height: 66px;
+	width: 66px;
+}
+
+.codingheads {
+	background-image: url(../icons/codingheads.png);
+}
+
+.duego {
+	background-image: url(../icons/duego.png);
+	text-indent: -99em;
+}
+
+.saltside {
+	background-image: url(../icons/saltside.png);
+}
+
+.facebook {
+	background-image: url(../icons/facebook.png);
+}
+
+.plex {
+	background-image: url(../icons/plex.png);
+}

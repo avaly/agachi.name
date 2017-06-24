@@ -1,0 +1,51 @@
+.photo {
+	background-size: cover;
+	position: relative;
+	overflow: hidden;
+}
+
+.photo::after {
+	content: '';
+	position: absolute;
+	z-index: 0;
+}
+
+@media (max-width: 60em) {
+	.photo {
+		background: url(../img/profile-photo-small.jpg) no-repeat 50% 40%;
+		height: 33vh;
+		width: 100vw;
+	}
+
+	.photo::after {
+		background: radial-gradient(
+			ellipse farthest-side at 50% 0,
+			rgba(0, 0, 0, 0) 75%,
+			#3c7419
+		);
+		bottom: 0;
+		left: -25%;
+		right: -25%;
+		top: 50%;
+	}
+}
+
+@media (min-width: 60em) {
+	.photo {
+		background: url(../img/profile-photo-large.jpg) no-repeat 50% 15%;
+		flex: 6;
+		height: 100%;
+	}
+
+	.photo::after {
+		background: radial-gradient(
+			ellipse farthest-side at 100% 0,
+			rgba(0, 0, 0, 0) 70%,
+			#3c7419 95%
+		);
+		bottom: -30%;
+		left: -5%;
+		right: 0;
+		top: 0;
+	}
+}
