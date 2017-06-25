@@ -20,7 +20,7 @@
 	.photo::after {
 		background: radial-gradient(
 			ellipse farthest-side at 50% 0,
-			rgba(0, 0, 0, 0) 75%,
+			transparent 75%,
 			#3c7419
 		);
 		bottom: 0;
@@ -39,10 +39,17 @@
 
 	.photo::after {
 		background: radial-gradient(
-			ellipse farthest-side at 100% 0,
-			rgba(0, 0, 0, 0) 70%,
-			#3c7419 95%
-		);
+				ellipse farthest-side at 100% 0,
+				transparent 70%,
+				#3c7419 95%
+			),
+			linear-gradient(
+				0deg,
+				#3c7419 28%,
+				transparent 32%,
+				transparent 94%,
+				#3c7419 98%
+			);
 		bottom: -30%;
 		left: -5%;
 		right: 0;

@@ -1,10 +1,14 @@
 body {
 	background: #3c7419;
 	color: #fff;
-	font-family: 'Share Tech Mono', monospace;
+	font-family: monospace;
 	height: 100%;
 	line-height: 1.5;
 	margin: 0;
+}
+
+.wf-sharetechmono-n4-active body {
+	font-family: 'Share Tech Mono', monospace;
 }
 
 a:link {
