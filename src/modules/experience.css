@@ -15,6 +15,10 @@
 	width: 66px;
 }
 
+.experience li:last-child {
+	margin-right: 0;
+}
+
 .experience a {
 	display: inline-block;
 	text-indent: -99em;

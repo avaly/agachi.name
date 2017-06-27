@@ -12,6 +12,10 @@ h1 {
 		letter-spacing: -0.025em;
 	}
 
+	h1 span {
+		display: none;
+	}
+
 	h2 {
 		font-size: 25px;
 	}

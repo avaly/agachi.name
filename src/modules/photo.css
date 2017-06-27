@@ -12,7 +12,7 @@
 
 @media (max-width: 60em) {
 	.photo {
-		background: url(../img/profile-photo-small.jpg) no-repeat 50% 40%;
+		background: url(../img/profile-photo-small.jpg) no-repeat 50% 56%;
 		height: 33vh;
 		width: 100vw;
 	}
