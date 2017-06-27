@@ -1,5 +1,10 @@
+:root {
+	--bg-color: #3c7419;
+}
+
 body {
 	background: #3c7419;
+	background: var(--bg-color);
 	color: #fff;
 	font-family: monospace;
 	height: 100%;
